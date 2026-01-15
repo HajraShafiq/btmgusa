@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="icon" type="image/png" href="img/BTMG Icon.png">
+<link rel="icon" type="image/png" href="{{ asset('storage/img/BTMG Icon.png[) }}">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -556,7 +556,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
 
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-            <img src="img/logo.png" class="logo-img" alt="Company Logo">
+            <img src="{{ asset('storage/img/logo.png') }}" class="logo-img" alt="Company Logo">
         </a>
 
         <!-- Mobile Toggle -->
@@ -1005,7 +1005,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
 
             <!-- LOGO + TEXT -->
             <div class="col-md-6 mb-6">
-                <img src="img/footer-logo.png" width="120" alt="Logo" style="margin-bottom: 20px;">
+                <img src="{{ asset('storage/img/footer-logo.png') }}" width="120" alt="Logo" style="margin-bottom: 20px;">
                 <p class="footer-logo-text mt-3">
                     At BTMG, we simplify processes and enhance <br>performance.
                     Your growth and trust remain our priority.

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="icon" type="image/png" href="img/BTMG Icon.png">
+<link rel="icon" type="image/png" href="{{ asset('storage/img/BTMG Icon.png') }}">
     <style>
         html {
     scroll-behavior: smooth;
@@ -1164,7 +1164,11 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
 
         <div>
             <i class="bi bi-clock" style="color: #F47B1E"></i> 9:00AM - 6:00PM &nbsp;&nbsp;
-            <i class="bi bi-envelope me-1" style="color: #F47B1E"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cda4a3aba28dafb9a0aab8beace3aea2a0">[email&#160;protected]</a> &nbsp;&nbsp;
+            <i class="bi bi-envelope me-1" style="color: #F47B1E"></i> 
+            
+            <script>
+  document.write("info" + "@" + "btmgusa.com");
+</script> &nbsp;&nbsp;
             <i class="bi bi-telephone me-1" style="color: #F47B1E"></i> +1 (630) 854 2247
         </div>
 
@@ -1190,7 +1194,8 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
 
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-            <img src="img/logo.png" class="logo-img" alt="Company Logo">
+        <img src="{{ asset('storage/img/logo.png') }}" style="height:50px;">
+
         </a>
 
         <!-- Mobile Toggle -->
@@ -1337,7 +1342,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
     <div class="wwa-card position-relative p-4 d-flex align-items-center">
 
         <!-- Image (floating outside the box) -->
-        <img src="img/women with laptop.png" alt="woman"
+        <img src="{{ asset('storage/img/women with laptop.png') }}" alt="woman"
              class="wwa-img">
 
         <!-- Text -->
@@ -1394,7 +1399,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
       <!-- Course 1 -->
       <div class="col-md-6 col-lg-3">
         <div class="course-card">
-          <img src="img/AI Scrum Master.png" alt="Excel Course">
+          <img src="{{ asset('storage/img/AI Scrum Master.png') }}" alt="Excel Course">
           <div class="course-overlay">
             <!-- <span class="course-badge">Beginner → Intermediate</span> -->
             <h5>Agile and AI Scrum Master</h5>
@@ -1410,7 +1415,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
       <!-- Course 2 -->
       <div class="col-md-6 col-lg-3">
         <div class="course-card">
-          <img src="img/Microservices.png" alt="Python Course">
+          <img src="{{ asset('storage/img/Microservices.png') }}" alt="Python Course">
           <div class="course-overlay">
             <!-- <span class="course-badge">Beginner → Intermediate</span> -->
             <h5>Microservices</h5>
@@ -1427,7 +1432,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
       <!-- Course 3 -->
       <div class="col-md-6 col-lg-3">
         <div class="course-card">
-          <img src="img/Excel.png" alt="Cybersecurity Course">
+          <img src="{{ asset('storage/img/Excel.png') }}" alt="Cybersecurity Course">
           <div class="course-overlay">
             <!-- <span class="course-badge">Beginner → Intermediate</span> -->
             <h5>MS Excel</h5>
@@ -1444,7 +1449,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
       <!-- Course 4 -->
       <div class="col-md-6 col-lg-3">
         <div class="course-card">
-          <img src="img/Python.png" alt="AI Course">
+          <img src="{{ asset('storage/img/Python.png') }}" alt="AI Course">
           <div class="course-overlay">
             <!-- <span class="course-badge">Beginner → Intermediate</span> -->
             <h5>Python</h5>
@@ -1477,7 +1482,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
  <div class="col-md-6">
         <div class="service-card">
        
-          <h5 class="fw-bold title-h5"><img  src="img/Online Trainings.png" class="icon-img">&ensp;&ensp;Online Trainings
+          <h5 class="fw-bold title-h5"><img  src="{{ asset('storage/img/Online Trainings.png') }}" class="icon-img">&ensp;&ensp;Online Trainings
 </h5>
           <p class="small text-muted">
            Live courses & labs: Excel Essentials, Learn Python, AI for Scrum.
@@ -1509,7 +1514,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
       <div class="col-md-6">
         <div class="service-card">
         
-          <h5 class="fw-bold  title-h5"><img  src="img/Software Development.png" class="icon-img">&ensp;&ensp;Software Development</h5>
+          <h5 class="fw-bold  title-h5"><img  src="{{ asset('storage/img/Software Development.png') }}" class="icon-img">&ensp;&ensp;Software Development</h5>
           <p class="small text-white-50">
             Web, mobile, and cloud platforms with AI features and integrations.
           </p>
@@ -1536,7 +1541,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
       <div class="col-md-6">
         <div class="service-card">
          
-          <h5 class="fw-bold title-h5"><img  src="img/Cyber Security.png" class="icon-img" >&ensp;&ensp;Cybersecurity</h5>
+          <h5 class="fw-bold title-h5"><img  src="{{ asset('storage/img/Cyber Security.png') }}" class="icon-img" >&ensp;&ensp;Cybersecurity</h5>
           <p class="small text-muted">
             Assessments, pen-testing and hardening — secure by design.
           </p>
@@ -1565,7 +1570,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
          
            
         
-          <h5 class="fw-bold title-h5"> <img  src="img/AI Data Processing.png" class="icon-img">&ensp;&ensp;AI Data Processing</h5>
+          <h5 class="fw-bold title-h5"> <img  src="{{ asset('storage/img/AI Data Processing.png') }}" class="icon-img">&ensp;&ensp;AI Data Processing</h5>
    
           <p class="small text-muted">
            Designing scalable pipelines for data ingestion & transformation.
@@ -1682,7 +1687,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
 
                     <!-- Icon -->
                     <div class="icon-bubble">
-                        <img src="img/inhm.png" class="icon-img" style="width: 30px; height: 30px;">
+                        <img src="{{ asset('storage/img/inhm.png') }}" class="icon-img" style="width: 30px; height: 30px;">
                     </div>
 
                     <h5 class="fw-bold">INeedHandyman<br>
@@ -1711,7 +1716,7 @@ src="https://www.facebook.com/tr?id=2365778067171392&ev=PageView&noscript=1"
 
                     <!-- Icon -->
                     <div class="icon-bubble">
-                        <img src="img/quick.png" class="icon-img">
+                        <img src="{{ asset('storage/img/quick.png') }}" class="icon-img">
                     </div>
 
                     <h5 class="fw-bold">QuickKuick<br>
@@ -1735,7 +1740,7 @@ Food Delivery</h5>
 
                     <!-- Icon -->
                     <div class="icon-bubble">
-                        <img src="img/in.png" class="icon-img">
+                        <img src="{{ asset('storage/img/in.png') }}" class="icon-img">
                     </div>
 
                     <h5 class="fw-bold">Inventory IQ<br>AI Powered</h5>
@@ -1758,7 +1763,7 @@ Food Delivery</h5>
 
                     <!-- Icon -->
                     <div class="icon-bubble">
-                        <img src="img/digital.png" class="icon-img">
+                        <img src="{{ asset('storage/img/digital.png') }}" class="icon-img">
                     </div>
 
                     <h5 class="fw-bold">Digital Legacy<br>
@@ -1786,7 +1791,7 @@ Vault</h5>
 
                     <!-- Icon -->
                     <div class="icon-bubble">
-                        <img src="img/binmind.png" class="icon-img">
+                        <img src="{{ asset('storage/img/binmind.png') }}" class="icon-img">
                     </div>
 
                     <h5 class="fw-bold">BinMind Storage<br>
@@ -1826,7 +1831,7 @@ anytime.
 
             <!-- IMAGE LEFT -->
             <div class="col-lg-6 text-center mb-4 mb-lg-0">
-                <img src="img/case studies.png" 
+                <img src="{{ asset('storage/img/case studies.png') }}" 
                      alt="Case Study Illustration"
                      class="img-fluid case-img">
             </div>
@@ -2097,8 +2102,10 @@ anytime.
     </div>
     <div class="text">
         <small class="contact-label">Email Address</small><br>
-        <span class="contact-number"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aec7c0c8c1eeccdac3c9dbddcf80cdc1c3">[email&#160;protected]</a><br></span>
-    </div>
+        <script>
+  document.write("info" + "@" + "btmgusa.com");
+</script>
+   </div>
 </section>
 
 
@@ -2169,7 +2176,7 @@ anytime.
 
             <!-- LOGO + TEXT -->
             <div class="col-md-6 mb-6">
-                <img src="img/footer-logo.png" width="120" alt="Logo" style="margin-bottom: 20px;">
+                <img src="{{ asset('storage/img/footer-logo.png') }}" width="120" alt="Logo" style="margin-bottom: 20px;">
                 <p class="footer-logo-text mt-3">
                     At BTMG, we simplify processes and enhance <br>performance.
                     Your growth and trust remain our priority.
@@ -2205,7 +2212,7 @@ anytime.
 
         </div>
     </div><br>
-    <center>Powered By <img src="img/DAAM logo.png" style="width:90px"> - Copyright 2023-2024</center>
+    <center>Powered By <img src="{{ asset('storage/img/DAAM logo.png') }}" style="width:90px"> - Copyright 2023-2024</center>
 </footer>
 
 <!-- SCROLL TO TOP BUTTON -->
